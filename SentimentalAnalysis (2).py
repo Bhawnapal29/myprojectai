@@ -1,7 +1,7 @@
 def sentiment_analysis(text):
     # List of positive and negative words
-    positive_words = ["good", "happy", "love", "excellent", "great"]
-    negative_words = ["bad", "sad", "hate", "terrible", "poor"]
+    positive_words = ["good", "happy", "love", "excellent", "great", "excellent", "victory"]
+    negative_words = ["bad", "sad", "hate", "terrible", "poor", "fail", "loser","damage"]
 
     # Convert the text to lowercase and split into words
     words = text.lower().split()
@@ -18,6 +18,6 @@ def sentiment_analysis(text):
     else:
         return "Neutral"
 
-text = input("Enter a sentence: ")
-print("Sentiment:", sentiment_analysis(text))
+text = input("Enter your statement: ")
+print("Statement is:", sentiment_analysis(text))
 
